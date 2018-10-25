@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+  let sukupuoli;
+  sukupuoli = prompt('Syötä sukupuolesi, m/n:');
+
+  if (sukupuoli == 'm') {
+    let hmg = prompt('Syötä hemoglobiiniarvosi (g/l):');
+    if (hmg < 134) {
+      alert('Hemoglobiinisi on alhainen');
+    } else if (hmg <= 175) {
+      alert('Hemoglobiinisi on normaali');
+    } else {
+      alert('Hemoglobiinisi on korkea');
+    }
+
+  } else if (sukupuoli == 'n') {
+    let hmg = prompt('Syötä hemoglobiiniarvosi (g/l):');
+    if (hmg < 134) {
+      alert('Hemoglobiinisi on alhainen');
+    } else if (hmg <= 175) {
+      alert('Hemoglobiinisi on normaali');
+    } else {
+      alert('Hemoglobiinisi on korkea');
+    }
+
+  } else {
+    alert('Sukupuolta ei tunnistettu.');
+  }
+
+
+</script>
+</body>
+</html>
