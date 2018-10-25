@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+  let valinta = window.confirm('Lasketaanko neliöjuuri?');
+
+  if (valinta == true) {
+    let luku = prompt('Syötä laskettava luku: ');
+    if (luku >= 0) {
+      let vastaus = Math.sqrt(luku);
+      document.write(vastaus);
+    } else {
+      document.write('Negatiivisen luvun neliöjuuri ei ole määritelty.');
+    }
+
+  } else {
+    document.write('Neliöjuurta ei lasketa.');
+  }
+
+</script>
+</body>
+</html>

@@ -5,6 +5,19 @@
     <title>Title</title>
 </head>
 <body>
+<script>
 
+  let raha = prompt('Syötä lompakkosi rahamäärä: ');
+  let hinta = prompt('Syötä bussilipun hinta: ');
+
+  if (raha >= hinta) {
+    raha = raha - hinta;
+    document.write('Hyvää matkaa! ');
+  } else {
+    document.write('Lompakossasi ei ollut tarpeaksi rahaa lippuun. ');
+  }
+  document.write('Lompakkosi rahamäärä on: ' + raha + '.');
+
+</script>
 </body>
 </html>
