@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+  let input_lei = Number(prompt('Syötetään paino keskiaikaisten mittojen mukaan, syötä leivisköjen määrä:'));
+  let input_nau = Number(prompt('Syötä naulojen määrä:'));
+  let input_luo = Number(prompt('Syötä luotien määrä: '));
+
+  let user_nau = input_lei * 20 + input_nau;
+  let user_luo = user_nau * 32 + input_luo;
+  let tulos = user_luo * 0.0133;
+  let tulos2 = tulos - Math.floor(tulos);
+
+  alert('Massa nykymittojen mukaan: \n' + Math.floor(tulos) + ' kilogrammaa ja ' + tulos2.toFixed(5) * 1000 +
+      ' grammaa.');
+
+</script>
+</body>
+</html>

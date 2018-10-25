@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let user_saldo = Number(prompt('Syötä tilisi saldo.'));
+  let user_interest = Number(prompt('Syötä vuosikorkosi.'));
+  let tulos = user_interest / 100 * user_saldo;
+  let tulos2 = tulos + user_saldo;
+  alert('Vuodessa kertynyt korko on: ' + tulos.toFixed(2) + ' euroa. Koko saldo koroilla on: ' + tulos2.toFixed(2) +
+      ' euroa.');
+
+</script>
+</body>
+</html>
