@@ -11,7 +11,7 @@
   sukupuoli = prompt('Syötä sukupuolesi, m/n:');
 
   if (sukupuoli == 'm') {
-    let hmg = prompt('Syötä hemoglobiiniarvosi (g/l):');
+    const hmg = prompt('Syötä hemoglobiiniarvosi (g/l):');
     if (hmg < 134) {
       alert('Hemoglobiinisi on alhainen');
     } else if (hmg <= 175) {
@@ -21,7 +21,7 @@
     }
 
   } else if (sukupuoli == 'n') {
-    let hmg = prompt('Syötä hemoglobiiniarvosi (g/l):');
+    const hmg = prompt('Syötä hemoglobiiniarvosi (g/l):');
     if (hmg < 134) {
       alert('Hemoglobiinisi on alhainen');
     } else if (hmg <= 175) {

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let maara = prompt("Syötä arpalukujen lukumäärä.");
+    let tulos = 0;
+    let arpa = 0;
+    for (let i = 0; i < maara ; i++){
+      arpa = Math.floor(Math.random() * 6) + 1;
+      tulos = tulos + arpa;
+      document.write("Nopan " + (i+1) + " silmäluku on: " + arpa + ". <br>");
+    }
+
+    document.write("Arpalukujen summa on: " + tulos +".");
+</script>
+</body>
+</html>

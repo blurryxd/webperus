@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let aloitus = prompt('Syötä aloitus vuosi.');
+  let lopetus = prompt('Syötä lopetus vuosi.');
+  document.write('<ul> <br>');
+
+  for (let i = aloitus; i <= lopetus; i++) {
+    if (i % 4 == 0) {
+      if (i % 100 == 0) {
+        if (i % 400 == 0) {
+          document.write('    <li>' + i + '</li> <br>');
+        } else {
+        }
+      } else {
+        document.write('    <li>' + i + '</li> <br>');
+      }
+    } else {
+    }
+  }
+
+  document.write('</ul>');
+</script>
+</body>
+</html>
