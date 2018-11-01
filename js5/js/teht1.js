@@ -15,9 +15,8 @@ td.appendChild(p2);
 tr2.appendChild(td);
 
 let parent = document.getElementsByTagName('tr');
-let node = document.getElementsByTagName('th')[2].innerHTML = '';
-parent.removeChild(node);
+let node = document.getElementsByTagName('th')[2];
+parent[0].removeChild(node);
 
-let parent2 = document.getElementsByTagName('tr');
-let node2 = document.getElementsByTagName('td')[2].innerHTML = '';
-parent2.removeChild(node2);
+let node2 = document.getElementsByTagName('td')[2];
+parent[1].removeChild(node2);
