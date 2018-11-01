@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+  let numero, taulukko, totuus;
+  totuus = true;
+  taulukko = [];
+  for (let i = 0; totuus == true; i++) {
+    numero = prompt('Anna lukuja 1 ja 1000 väliltä. Sama luku kahteen kertaa lopettaa toiminnan.');
+    for (let j = 0; j < i; j++) {
+      if (numero == taulukko[j]) {
+        totuus = false;
+        document.write('Luku on jo annettu. Ohjelma loppuu.');
+      }
+    }
+    taulukko[i] = numero;
+  }
+</script>
+
+</body>
+</html>
+
