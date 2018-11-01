@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+  const kierrokset = prompt('Syötä osallistujien määrä.');
+  let osallistujat = [];
+
+  for (let i = 0; i < kierrokset; i++) {
+    osallistujat[i] = prompt('Syötä osallistujan ' + (i + 1) + '. nimi.');
+  }
+
+  for (let i = 0; i < kierrokset; i++) {
+    document.write('Osallistuja ' + (i + 1) + ': ' + osallistujat[i] + '<br>');
+  }
+</script>
+</body>
+</html>

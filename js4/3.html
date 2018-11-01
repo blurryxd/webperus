@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+  const koirat = [];
+
+  for (let i = 0; i < 6; i++) {
+    koirat[i] = prompt('Syötä koiran ' + (i + 1) + ' nimi.');
+  }
+
+  koirat.sort();
+  koirat.reverse();
+
+  for (let i = 0; i < 6; i++) {
+    document.write(koirat[i] + '<br>');
+  }
+
+
+</script>
+
+
+</body>
+</html>
