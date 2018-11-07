@@ -1,0 +1,43 @@
+body {
+    background-color:#b3d4fc;
+}
+
+header {
+    background-color:  #FFD03E;
+    margin:auto;
+    width:50%;
+    border-radius: 15px;
+    position: static;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#inputBox {
+    background-color: white;
+    border-radius: 15px 50px;
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+    width:50%;
+    margin:auto;
+    margin-top: 20px;
+}
+
+h2, button, input, h1 {
+    margin:auto;
+    width:50%;
+    margin-top: 2 px;
+    text-align: center;
+}
+
+
+input, button, h2 {
+    border-width: 2px;
+    padding: 6px;
+    margin-top: 4px;
+    margin-bottom: 5px;
+}
+
+input, button {
+    margin-left: 25%;
+}
