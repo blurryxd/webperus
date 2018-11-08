@@ -1,5 +1,6 @@
 body {
     background-color:#b3d4fc;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -26,7 +27,6 @@ header {
 h2, button, input, h1 {
     margin:auto;
     width:50%;
-    margin-top: 2 px;
     text-align: center;
 }
 
@@ -41,3 +41,34 @@ input, button, h2 {
 input, button {
     margin-left: 25%;
 }
+
+main {
+    width:45%;
+    height: auto;
+    min-height: 500px;
+    background-color: #555555;
+    margin:auto;
+    border-radius: 15px;
+    color: white;
+    position: static;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.uudet {
+    padding: 12px;
+    max-width:860px;
+    margin:auto;
+    margin-top: 30px;
+
+}
+
+img {
+    border-style: solid;
+    border-color: black;
+    margin-right: 20px;
+    margin-bottom: auto;
+    float:left;
+}
+
