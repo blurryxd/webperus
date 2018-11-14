@@ -4,6 +4,10 @@ function search() {
   let userInput = document.getElementById('hakukentta').value;
   fetch('http://api.tvmaze.com/search/shows?q=' + userInput).
       then(response => response.json()).
+      then(info => {
+        console.log(info);
+        return info;
+      }).
       then(shows => {
         const sarjat = document.getElementById('sarjat');
         sarjat.innerHTML = shows.map(({show}) => `
